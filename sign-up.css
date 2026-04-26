@@ -4,39 +4,41 @@ h1,h2{
 
 
 nav{
-   background: black;
-   padding: 20px;
+background: linear-gradient(rgba(0, 0, 0, 0.508));
+padding: 20px;
 }
 ul{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+display: flex;
+justify-content: center;
+gap: 40px;
 }
 li{
-    list-style: none;
+list-style: none;
 }
-a{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-        position: relative;
+.theme{
+font-size: 25px;
+font-weight: bold;
+color: white;
+position: relative;
+ font-family: "Shojumaru", system-ui;
 }
-a::after{
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 3px;
-    background: gold;
-    left: 0;
-    bottom: -5px;
-    transition: 0.4s;
+.theme::after{
+width: 0px;
+height: 2px;
+left: 0;
+bottom:-5px;
+position: absolute;
+content: "";
+transition: 0.4s;
+background: gold;
 }
-a:hover::after{
- width: 100%;
+.theme:hover::after{
+width: 100%;
 }
-a:hover{
-    color: gold;
-    transform: scale(1.4) translateY(-10px);
-    text-shadow: 0px 0px 10px gold;
+.theme:hover{
+color: gold;
+transform: scale(1.2) translateX(-5px) ;
+text-shadow: 0 0 10px gold;    
+}
    
 }
