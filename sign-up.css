@@ -1,8 +1,19 @@
-h1,h2{
-    text-align: center;
+body{
+background: linear-gradient(
+rgba(0,0,0,0.75),
+rgba(20,20,20,0.80)
+),
+url(chat.jpg);
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+color:white;
 }
 
 
+h1,h2{
+    text-align: center;
+}
 nav{
 background: linear-gradient(rgba(0, 0, 0, 0.508));
 padding: 20px;
@@ -11,6 +22,7 @@ ul{
 display: flex;
 justify-content: center;
 gap: 40px;
+
 }
 li{
 list-style: none;
@@ -21,6 +33,7 @@ font-weight: bold;
 color: white;
 position: relative;
  font-family: "Shojumaru", system-ui;
+ text-decoration: none;
 }
 .theme::after{
 width: 0px;
@@ -40,7 +53,9 @@ color: gold;
 transform: scale(1.2) translateX(-5px) ;
 text-shadow: 0 0 10px gold;    
 }
-   
+
+
+
 }
 footer{
 font-weight: bold;
