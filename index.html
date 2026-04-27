@@ -10,20 +10,21 @@
 <body>
     <h1 align="center">Sign Up</h1>
    <div class="navbar">
-    <nav>
-        <ul>
-            <li><a class="theme" href="index.html">Home</a></li>
-            <li><a class="theme" href="login.html">Login</a></li>
-            <li><a class="theme" href="https://adelhassan-sys.github.io/Adel/">Sign Up</a></li>
-            <li><a class="theme" href="#">Museums</a></li>
-            <li><a class="theme" href="#">Search</a></li>
-            <li><a class="theme" href="#">Gallery</a></li>
-            <li><a class="theme" href="https://omaryoussri.github.io/EgyptianMuseums/">Ticket Prices</a></li>
-            <li><a class="theme" href="https://omardezny1234-eng.github.io/Contact-USs/">Contact Us</a></li>
-        </ul>
+<nav>
+<ul>
+<a class="theme" href="#"><li>Home</li></a>
+   <a class="theme" href="#"> <li>Login</li>
+    <a class="theme"  href="#"><li>Sign Up</li></a>
+    <a class="theme"  href="#"><li>Museums</li></a>
+    <a class="theme" href="#"><li>Search</li></a>
+    <a class="theme" href="#"><li>Gallery</li></a>
+    <a class="theme" href="#"><li>Ticket Prices</li></a>
+    <a class="theme" href="#"><li>Contact Us</li></a>
+       </ul>
     </nav>
-</div>
-<br>
+ </div>
+<br><br><br>
+
 <h2 align="center">Get started on AEC </h2>
 <p align="center">Sign Up to learn more about Ancient Egyptian civilization</p>
 <hr>
@@ -104,17 +105,19 @@
 <div>
     <label for="Age">Age</label>
     <input type="number" name="Age" id="Age" min="0" max="100" placeholder="Age" required><br>
-</div>
+</div><br>
 
-<div>
-    <label for="Password">Password</label>
-    <input type="password" name="Password" id="Password" placeholder="Password" required><br>
-</div>
+<div class="password-wrapper">
+    <label for="password">password</label>
+    <input type="password" id="myPassword" placeholder="Enter Password">
+    <button type="button" id="toggleBtn" onclick="togglePassword()">Show</button>
+</div><br>
 
-<div>
-    <label for="Confirm Passwrd">Confirm Passwrd</label>
-    <input type="password" name="Confirm Passwrd" id="Confirm Passwrd" placeholder="Confirm Password" required><br>
-</div>
+<div class="password-wrapper">
+    <label for="confirmPassword">Confirm password</label>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <button type="button" id="toggleConfirmBtn" onclick="toggleConfirmPassword()">Show</button>
+</div><br>
 
 <div>   
 <label for="Gender">Gender</label>
@@ -161,6 +164,6 @@
             </div>
         </footer>
 </main>
-
+<script src="script.js"></script>
 </body>
 </html>
