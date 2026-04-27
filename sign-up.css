@@ -9,11 +9,127 @@ background-attachment: fixed;
 background-size: cover;
 color:white;
 }
-
-
-h1,h2{
-    text-align: center;
+fieldset div {
+    margin-bottom: 15px;
 }
+
+fieldset p {
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+
+.radio-item {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+
+input[type="radio"] {
+    width: 18px !important;
+    height: 18px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+
+label {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="tel"],
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="number"], 
+input[type="date"], 
+select, 
+textarea {
+    width: 40%;
+    padding: 12px 15px; 
+    margin: 10px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 16px; 
+    transition: all 0.3s ease; 
+    outline: none; 
+}
+
+input:focus, select:focus {
+    border: 2px solid #d4af37; 
+    background-color: #fff; 
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4); 
+}
+
+label {
+    font-weight: bold;
+    color: #fff; 
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: #aaa;
+    font-style: italic;
+    font-size: 14px;
+}
+
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+
+input[type="submit"] {
+    background-color: #e0e0e0; 
+    color: #333;
+}
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+
+input[type="reset"] {
+    background-color: #888888;
+    color: white;
+}
+input[type="reset"]:hover {
+    background-color: #aaaaaa;
+}
+
+input[type="button"] {
+    background-color: #444444;
+    color: white;
+}
+input[type="button"]:hover {
+    background-color: #555555;
+    border-color: #888;
+}
+form{
+    background-color: rgba(255, 217, 0, 0.219);
+}
+
+
 nav{
 background: linear-gradient(rgba(0, 0, 0, 0.508));
 padding: 20px;
@@ -54,9 +170,6 @@ transform: scale(1.2) translateX(-5px) ;
 text-shadow: 0 0 10px gold;    
 }
 
-
-
-}
 footer{
 font-weight: bold;
 color: white;
@@ -90,4 +203,3 @@ margin-top: -15px;
     text-shadow: 0 0 10px gold;  
     transition: 0.4s;
 }
-
