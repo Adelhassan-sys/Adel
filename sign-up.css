@@ -66,3 +66,28 @@ padding: 20px;
 text-align: center;    
 margin-top: -15px;
 }
+.links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,auto);
+    gap: 10px;
+}
+.item{
+    padding: 3px;
+    text-align: center;
+}
+.links a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color:aliceblue;
+    text-transform: capitalize;
+    transition: transform 0.3s ease,color 0.3s ease;
+}
+.links a:hover{
+    color: gold;
+    transform: scale(1.2) translateX(-5px) ;
+    text-shadow: 0 0 10px gold;  
+    transition: 0.4s;
+}
+
