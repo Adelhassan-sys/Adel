@@ -117,6 +117,7 @@ input[type="reset"]:hover {
     background-color: #aaaaaa;
 }
 
+
 input[type="button"] {
     background-color: #444444;
     color: white;
@@ -202,4 +203,35 @@ margin-top: -15px;
     transform: scale(1.2) translateX(-5px) ;
     text-shadow: 0 0 10px gold;  
     transition: 0.4s;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 40%; 
+    margin: 10px 0 20px 0; 
+    display: inline-block;
+}
+
+.password-wrapper input[type="password"],
+.password-wrapper input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    padding-right: 60px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+.password-wrapper button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
 }
