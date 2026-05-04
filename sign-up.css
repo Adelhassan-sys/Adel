@@ -134,6 +134,7 @@ form{
 nav{
 background: linear-gradient(rgba(0, 0, 0, 0.508));
 padding: 20px;
+font-family: "Shojumaru", system-ui;
 }
 ul{
 display: flex;
@@ -151,6 +152,7 @@ color: white;
 position: relative;
  font-family: "Shojumaru", system-ui;
  text-decoration: none;
+ font-family: "Shojumaru", system-ui;
 }
 .theme::after{
 width: 0px;
@@ -170,6 +172,7 @@ color: gold;
 transform: scale(1.2) translateX(-5px) ;
 text-shadow: 0 0 10px gold;    
 }
+
 
 footer{
 font-weight: bold;
@@ -234,4 +237,68 @@ margin-top: -15px;
     cursor: pointer;
     font-size: 14px;
     color: #333;
+}
+
+body.light-theme {
+    color: black !important;
+}
+
+body.light-theme form {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border: 2px solid #d4af37;
+}
+
+
+body.light-theme h2, 
+body.light-theme p,
+body.light-theme label,
+body.light-theme fieldset p {
+    color: black !important;
+    text-shadow: 1px 1px 2px white; 
+}
+
+body.dark-theme {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(20,20,20,0.80)), url(chat.jpg) !important;
+    color: white !important;
+}
+
+.theme {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    font-family: "Shojumaru", system-ui;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.4s;
+    background: none;
+    border: none;
+}
+
+#dark-theme-button {
+    display: inline-block;
+    padding: 0;
+}
+
+.theme-btn-box {
+    background-color: #d4af37;
+    color: black !important; 
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: "Shojumaru", system-ui;
+    font-size: 16px; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+.theme-btn-box:hover {
+    background-color: white;
+    color: #d4af37 !important;
+    transform: scale(1.05);
+}
+ul li {
+    display: flex;
+    align-items: center;
 }
