@@ -5,10 +5,10 @@ function togglePassword() {
 
     if (passwordField.type === "password") {
         passwordField.type = "text";
-        toggleBtn.textContent = "Hide"; // تغيير النص لـ اخفاء
+        toggleBtn.textContent = "Hide";
     } else {
         passwordField.type = "password";
-        toggleBtn.textContent = "Show"; // تغيير النص لـ اظهار
+        toggleBtn.textContent = "Show"; 
     }
 }
 function toggleConfirmPassword() {
@@ -23,3 +23,31 @@ function toggleConfirmPassword() {
         toggleBtn.textContent = "Show";
     }
 }
+
+
+
+let currentTheme = localStorage.getItem("theme");
+let body = document.getElementsByTagName("body")[0];
+let themeBtn = document.getElementById("dark-theme-button");
+
+
+if (currentTheme === "light") {
+    body.className = "light-theme";
+    themeBtn.innerHTML = "Dark Mode";
+} else {
+    body.className = "dark-theme"; 
+    themeBtn.innerHTML = "Light Mode";
+}
+
+function changeTheme() {
+    let themeState = localStorage.getItem("theme");
+    if (themeState === "dark") {
+        body.classList.replace("dark-theme", "light-theme");
+        localStorage.setItem("theme", "light");
+        themeBtn.innerHTML = "Dark Mode";
+    } else {
+        body.classList.replace("light-theme", "dark-theme");
+        localStorage.setItem("theme", "dark");
+        themeBtn.innerHTML = "Light Mode";
+    }
+}   
